@@ -12,10 +12,7 @@ void setup()
 }
 void draw()
 {
-  stroke(0);
-  fill(222,184,135);
-  rect(0,350,500,100);
-  redraw();
+  
   lightning();
   hole();
   
@@ -40,8 +37,13 @@ void lightning()
 
 void hole()
 {
+  stroke(0);
+  fill(222,184,135);
+  rect(0,350,500,100);
   fill(0,0,0);
   ellipse(holeX, 350, 10, 10);
+
+
 }
 void mousePressed()
 {
