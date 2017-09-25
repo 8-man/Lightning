@@ -7,15 +7,19 @@ void setup()
 {
   size(500,400);
   strokeWeight(3);
+  background(0);
   
 }
 void draw()
 {
-  background(0,0,0);
+  stroke(0);
+  fill(222,184,135);
+  rect(0,350,500,100);
+  redraw();
   lightning();
   hole();
-  ground();
-  redraw();
+  
+  
 }
 void lightning()
 {
@@ -33,13 +37,7 @@ void lightning()
     
   }
 }
-void ground()
-{
-  stroke(0);
-  fill(222,184,135);
-  rect(0,350,500,100);
 
-}
 void hole()
 {
   fill(0,0,0);
